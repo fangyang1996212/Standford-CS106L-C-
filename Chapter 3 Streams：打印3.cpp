@@ -1,4 +1,4 @@
-// 对 PrintBody的改进，利用 while(input>>intValue>>doubleValue)来遍历整个文件，当读取完毕的时候退出循环.
+// 对 PrintBody 的改进，利用 while(input>>intValue>>doubleValue)来遍历整个文件，当读取完毕的时候退出循环.
 // 不要用 while(!input.fail()) ,因为程序关心流读取，至少会循环一次，而不是读文件为空或者读取完就立马终止
 
 #include<iostream>
