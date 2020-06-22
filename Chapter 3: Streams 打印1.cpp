@@ -36,7 +36,7 @@ void PrintHeader()
 
 void PrintBody()
 {
-  ifstream input("/Users/apple/Desktop/C++ Project/Standford Project/Standford C++/table-data.txt");
+  ifstream input("打开文件的绝对路径");
   
   for(int i=0; i<LINE_NUM; ++i)
   {
