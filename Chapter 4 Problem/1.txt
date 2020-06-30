@@ -1,2 +1,8 @@
 1. List three major differences between #define and the const keyword for defining named constants.
 
+#define 定义常量不会分配内存空间，而用const会分配内存空间；
+#define 定义常量没有数据类型，而const有数据类型；
+#define 定义常量只是纯粹的位置放置，不利于程序进行错误排查，而const解决了程序间不安全性。
+
+用宏进行替换的时候，预处理程序把替换处看作一个字符串，且预处理程序没有运算符优先级的概念，导致出错。
+所以定义常量的时候最好用const关键字定义，因为编译程序理解数学表达式，而不会把它看成字符。
