@@ -1,0 +1,9 @@
+Question：
+
+4. Give one advantage of the macro MAX over the function Max you wrote in the previous problem.
+(Hint: What is the value of Max(1.37, 1.24)? )
+
+Answer：
+纯C语言中宏背后的动机之一是内联程序的效率，编译器会将这段代码变为机器语言直接执行。
+
+对于正常的max函数，编译程序首先调用max，然后把结果存于变量中，这样就慢啦～
