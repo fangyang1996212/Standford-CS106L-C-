@@ -6,4 +6,11 @@ Question：
 Answer：
 纯C语言中宏背后的动机之一是内联程序的效率，编译器会将这段代码变为机器语言直接执行。
 
-对于正常的max函数，编译程序首先调用max，然后把结果存于变量中，这样就慢啦～
+对于正常的max函数，编译程序首先调用max，然后把结果存于变量中，这样效率就比宏慢啦～
+
+In computer science jargon, the macro is inlined because the compiler places the contents of the “function”
+at the call site instead of inserting an indirect jump to the code for the function. 
+
+宏是内联的，因为编译器把函数的内容直接放在了调用处，而不是跳转到函数定义的地方读取函数内容！！！  nice啊，牛！
+
+
