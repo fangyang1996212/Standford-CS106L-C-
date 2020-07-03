@@ -1,0 +1,25 @@
+Question
+
+5. The following C++ code is illegal because the #if directive cannot call functions:
+   bool IsPositive(int x) {
+   return x < 0;
+   }
+
+   #if IsPositive(MY_CONSTANT) // <-- Error occurs here
+      #define result true
+   #else
+      #define result false
+   #endif
+ 
+Given your knowledge of how the preprocessor works, explain why this restriction exists. ♦
+
+Answer
+
+ #if MY_CONSTANT > 137                  // Legal
+ #if MY_CONSTANT * 42 == MY_CONSTANT    // Legal
+ #if sqrt(MY_CONSTANT) < 4              // Illegal, cannot call function sqrt
+ #if MY_CONSTANT == 3.14                // Illegal, can only use integral values
+ 
+因为预处理器在其余代码编译之前运行，所以预处理器指令只能引用 #define 的常量、整数值以及这些值的算术和逻辑表达式。
+
+#if + 函数是非法的哦！！
