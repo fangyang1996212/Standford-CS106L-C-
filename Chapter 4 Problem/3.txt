@@ -19,3 +19,5 @@ functions will be called once during the comparison and possibly twice in the se
 
 If MyFn1() or MyFn2() are slow, this is inefficient, and if either of the two have side effects (for example,
 writing to disk or changing a global variable), the code will be incorrect.
+
+如果这两个函数运行缓慢，这会将导致程序低效率；如果它们都有副作用（例如，写入磁盘或更改全局变量），代码讲报错！
