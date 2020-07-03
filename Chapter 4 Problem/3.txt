@@ -1,0 +1,21 @@
+Question：
+
+3. Write a regular C++ function called Max that returns the larger of two int values. Explain why it
+does not have the same problems as the macro MAX covered earlier in this chapter.
+
+Answer：
+
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
+
+int x = MAX(MyFn1(), MyFn2());
+
+This expands out to
+
+   int x = ((MyFn1()) > (MyFn2()) ? (MyFn1()) : (MyFn2()));
+   
+While this will assign x the larger of MyFn1() and MyFn2(), it will not evaluate the parameters only once,
+as you would expect of a regular C++ function. As you can see from the expansion of the MAX macro, the
+functions will be called once during the comparison and possibly twice in the second half of the statement.
+
+If MyFn1() or MyFn2() are slow, this is inefficient, and if either of the two have side effects (for example,
+writing to disk or changing a global variable), the code will be incorrect.
