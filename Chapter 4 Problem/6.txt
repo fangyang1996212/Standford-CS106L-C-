@@ -1,0 +1,7 @@
+Question
+
+6. Compilers rarely inline recursive functions, even if they are explicitly marked inline. Why do you
+think this is?
+
+Answer
+
