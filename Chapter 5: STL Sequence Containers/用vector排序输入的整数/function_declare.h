@@ -11,5 +11,6 @@ string GetLine();
 int GetInteger();
 size_t GetSmallestIndex(vector<int>& v, size_t startIndex);
 SelectionSort(vector<int>& v);
+size_t InsertionIndex(vector<int>& v, int toInsert)；
 
 #endif 
