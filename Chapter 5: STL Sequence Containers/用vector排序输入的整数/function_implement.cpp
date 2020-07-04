@@ -11,6 +11,7 @@ string GetLine() {
     return result;
 }
 
+
 int GetInteger() {
     while(true) { // Read input until user enters valid data
     stringstream converter;
@@ -30,6 +31,7 @@ int GetInteger() {
     }
 }
 
+
 size_t GetSmallestIndex(vector<int>& v, size_t startIndex) {
         size_t bestIndex = startIndex;
         for (size_t i = startIndex; i < v.size(); ++i)
@@ -39,6 +41,7 @@ size_t GetSmallestIndex(vector<int>& v, size_t startIndex) {
       return bestIndex;
  }
 
+
 void SelectionSort(vector<int>& v) {
        for (size_t i = 0; i < v.size(); ++i) {
             size_t smallestIndex = GetSmallestIndex(v, i); // We'll write this
@@ -46,5 +49,13 @@ void SelectionSort(vector<int>& v) {
            
             swap (v[i], v[smallestIndex]);
        }
+}
+
+
+size_t InsertionIndex(vector<int>& v, int toInsert) {
+    for(size_t i = 0; i < v.size(); ++i)
+        if (toInsert < v[i])
+        return i;
+    return v.size();
 }
 
