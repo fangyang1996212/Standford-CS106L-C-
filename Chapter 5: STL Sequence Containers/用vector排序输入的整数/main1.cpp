@@ -1,10 +1,4 @@
-//
-//  main.cpp
-//  Standford_C++
-//
-//  Created by FY on 2020/6/25.
-//  Copyright © 2020 WH-JS. All rights reserved.
-//
+// 方法1
 
 #include <iostream>
 #include <fstream>
@@ -30,7 +24,9 @@ int main(int argc, const char * argv[]) {
         values.push_back(val);
         
     }
+    
     SelectionSort(values);
+    
     for (size_t i = 0; i < kNumValues; ++i)
         cout << values[i] << endl;
  
