@@ -10,4 +10,4 @@ int GetInteger();
 size_t GetSmallestIndex(vector<int>& v, size_t startIndex);
 SelectionSort(vector<int>& v);
 
-#endif /* strutils_hpp */
+#endif 
