@@ -3,7 +3,9 @@
 #ifndef function_declare_hpp
 #define function_declare_hpp
 
-
+#include<iostream>
+#include<vector>
+using namespace std;
 
 string GetLine();
 int GetInteger();
