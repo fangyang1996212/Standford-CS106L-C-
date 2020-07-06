@@ -7,10 +7,6 @@
 #include "function.hpp"
 using namespace std;
 
-string GetLine();
-int GetInteger();
-size_t InsertionIndex(vector<int>& v, int toInsert);
-
 const int kNumValues = 10;
 
 int main() {
