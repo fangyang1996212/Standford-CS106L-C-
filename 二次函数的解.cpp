@@ -1,3 +1,7 @@
+//  make_pair 的意思:
+//  Creators (a.k.a. make_X) allows you to create
+//  aggregate structures without ever figuring out the types.
+
 #include <iostream>
 #include <math.h>
 using namespace std;
