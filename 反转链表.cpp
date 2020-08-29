@@ -49,7 +49,7 @@ void Delete_LinkList(node* head)
     while(head != NULL)
     {
         next = head->next;
-        delete head;
+        delete(head);
         head = next;
     }
 }
