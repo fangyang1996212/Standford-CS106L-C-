@@ -42,10 +42,24 @@ node* ReverseLinkList(node* head)
     return pre;
 }
 
+/* 释放链表 */
+void Delete_LinkList(node* head)
+{
+    node* next = NULL;
+    while(head != NULL)
+    {
+        next = head->next;
+        delete head;
+        head = next;
+    }
+}
+
+
+/**************************************主函数*************************************************/
 int main(int argc, char* argv[])
 {
     int a[5] = {1,2,3,4,5};
-    node* head = create(a, 5); // 新建一个链表把头指针赋给 L
+    node* head = create(a, 5); // 新建一个链表把头指针赋给 head
 
     /**************************************反转前*************************************************/
     printf("反转前的链表：\n");
@@ -65,10 +79,11 @@ int main(int argc, char* argv[])
        {
            printf("%d ",R->data);
            R = R->next;
-           if(R==NULL) delete R;
        }
-    
+
     printf("\n");
+
+    Delete_LinkList(R);
     
     return 0;
 }
