@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
 	{
 		close(fd[0]);
 		write(fd[1], str, strlen(str));
-		sleep(1);
+		sleep(1);  // 如果父进程结束的早，就用 sleep 来延缓父进程结束。
 
 		close(fd[1]);
 	}else if(pid == 0)
