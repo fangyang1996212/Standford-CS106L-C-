@@ -29,3 +29,31 @@ int main(){
     
     return 0;
 }
+
+/******************* C++ 实现 *****************************/
+//#include<iostream>
+//#include<string>
+//#include<vector>
+//#include <fstream>
+//#include <algorithm>
+//#include "Stack.hpp"
+//using namespace std;
+//
+//class StudentIfo{
+//public:
+//    int id;
+//    string name;
+//    StudentIfo(){};
+//    StudentIfo(int _id): id(_id){};
+//    //StudentIfo(int _id, string _name): id(_id),name(_name){};
+//    
+//private:
+//    int _id;
+//    string _name;
+//};
+//
+//int main(){
+//    StudentIfo fy;
+//    StudentIfo yf(12);
+//    StudentIfo jack(12, "abc");
+//}
