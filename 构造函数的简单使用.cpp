@@ -41,11 +41,9 @@ int main(){
 //
 //class StudentIfo{
 //public:
-//    int id;
-//    string name;
 //    StudentIfo(){};
-//    StudentIfo(int _id): id(_id){};
-//    //StudentIfo(int _id, string _name): id(_id),name(_name){};
+//    StudentIfo(int id): _id(id){};
+//    //StudentIfo(int id, string name): _id(id),_name(name){};
 //    
 //private:
 //    int _id;
